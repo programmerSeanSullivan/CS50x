@@ -1,0 +1,20 @@
+0.  3
+1.  gif
+2.  lossless compression is when all data that is compressed that was originally in file remains after the file is uncompressed. while lossy means some data was lost and must be recovered.
+3.  Jpeg.
+4.  The first character is replaced by a special character (E5h) which tells the operating system ignore this file.
+5.  You can use a special program which can look for and delete these encrypted and ignored files, and by deleting it writes over the data escentially destroying the data.
+6.  A header file that allows you to use for example uint8_t which allows you to control the size of the int.
+7.  To be able to control the exact size and range of integers used in order to use the data in desired ways.
+8.  BYTE = 1 byte, DWORD = 4 bytes, LONG = 4 bytes, WORD = 2 bytes.
+9.  0x4D42
+10. bfSize tells you the size of the file, while biSize tells you the size of the actual bitmap structure.
+11. it means the origin for the bitmap is in top left corner of bitmap.
+12. biBitCount
+13. if for some reason it cannot find file or it cannot overwrite an existing file to make the 
+    one you want for example i ran ./copy small.bmp copy and it gave me that error leading me to that conclusion.
+14. It specifies how many things we are reading and our programs only read one item.
+15. 12
+16. moves the cursor(file currently being read or written in) to a specified location
+17. you use it in fseek and it moves the cursor in porption to where it is currently at.
+18. I cannot tell who it is, some student teacher or something :(.
