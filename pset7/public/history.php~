@@ -1,0 +1,23 @@
+<ul class="nav nav-pills">
+    <li><a href="index.php">Portfolio</a></li>
+    <li><a href="quote.php">Quote</a></li>
+    <li><a href="buy.php">Buy</a></li>
+    <li><a href="sell.php">Sell</a></li>
+    <li><a href="history.php">History</a></li>
+    <li><a href="deposit.php">Deposit Funds</a></li>    
+    <li><a href="logout.php"><strong>Log Out</strong></a></li>
+</ul>
+<?php
+    // configuration
+    require("../includes/config.php");  
+    
+    // query cash for template
+    $cash =	query("SELECT cash FROM users WHERE id = ?", $_SESSION["id"]);	
+    
+	// create new array to store all info for history table
+    $history = query("SELECT * FROM history WHERE id = ?", $_SESSION["id"]);
+    
+    // render sell form
+    render("history_form.php", ["title" => "History", "cash" => $cash, "history" => $history]);
+   
+?>

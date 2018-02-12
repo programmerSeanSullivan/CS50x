@@ -1,0 +1,30 @@
+0. Pneumonoultramicoroscopiclilcovlcanoconiosis is the longest word published in the oxford dictionary and is a type 
+    of lung disease.
+1.  It Returns resource usage measures for who, which can be one of the following RUSAGE_SELF, RUSAGE_CHILDREN, 
+    RUSAGE_THREAD, they are returned in the structure pointed to by usage.
+2.  16
+3.  Because the values change on every run depending on a multiude of reasons if it was done by value, the same 
+    calculations would appear. For example if you ran the program three times on the same paper you would get three 
+    different values, but if you passed the value you would get the same values everytime even though that may not 
+    be true.
+4.  The for loop line it self says store the first char as an int in c, checks to make sure its not the end of the
+    file, and then sets c equal to the next char. Then inside it checks to see if its a char or appostophe and if
+    the index is greater than zero. If it is add the char to the word in proper location then move to the next 
+    empty spot in the array if the index is to long to be a word consume the rest of those letters and ignore the 
+    word. reset the index to zero to store a new word. if a digit is encountered consume rest of that word and 
+    reset index to zero to store a new word. if none of those other conditions are met and index is  greater than
+    zero a new word is found add one to the counter word spelling update the time, and if the word is misspelled
+    print the word and add one to misspelled counter, set index to zero for next word to be stored.
+5.  fgetc geths the character for a letter or apostophe while the fscanf will read until white space so it could add
+    numbers or commas into the word and that would cause errors the way the program is designed.
+6.  That way we would have to use some type of dynamic memory storage to complete the program.
+7.  I implimented a combination of hash table and tries to form my program and what was implimented inside my node 
+    was simply a word of a length+1 to allow for the space inbetween words,and a pointer to the next node.
+8.  It took 112 seconds long.
+9.  I increased the size of the hash table and based it off of the first four characters of the word if the word 
+    was that long.
+    I also made my formula for the hash table to be 26*26*26*12. I am not to sure why it works faster with a 12 for 
+    the last char but it does my best guess is because maybe some words do not stretch that long allowing faster 
+    storage for words 3 chars long or the possibilities for the end of an actual word is less than 26.
+10. Yes I do I feel my biggest bottle neck is the 12 if I could find the precise reason as to why it is that way I 
+    could modify it to make the hashing process quicker and more efficient without producing errors.
